@@ -1,0 +1,63 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.navbar .btn-auth-shared {
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: transparent;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar .btn-auth-shared:hover,
+.navbar .btn-auth-shared:focus {
+  background: #ffffff;
+  color: #2e5a8a;
+  border-color: #ffffff;
+}
+
+.navbar .btn-auth-shared:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.navbar-action-btn {
+  min-width: 140px;
+  text-align: center;
+}
+
+.btn-auth-shared-light {
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #2e5a8a;
+  background: #2e5a8a;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-auth-shared-light:hover,
+.btn-auth-shared-light:focus {
+  background: #ffffff;
+  color: #2e5a8a;
+  border-color: #2e5a8a;
+}

@@ -90,7 +90,7 @@ export const RecoveryPassword = () => {
                         </div>
 
                         <div className="d-grid">
-                            <button type="submit" className="btn btn-primary" disabled={loading || !token}>
+                            <button type="submit" className="btn btn-auth-shared-light" disabled={loading || !token}>
                                 {loading ? "Actualizando..." : "Guardar contrasena"}
                             </button>
                         </div>

@@ -50,7 +50,7 @@ export const Login = () => {
                     },
                 });
 
-                navigate("/");
+                navigate("/loguedactivities");
             })
             .catch((error) => {
                 // Captura el mensaje de cuenta no activada o los errores de red

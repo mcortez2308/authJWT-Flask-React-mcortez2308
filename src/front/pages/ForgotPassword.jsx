@@ -49,7 +49,7 @@ export const ForgotPassword = () => {
                         </div>
 
                         <div className="d-grid">
-                            <button type="submit" className="btn btn-primary" disabled={loading}>
+                            <button type="submit" className="btn btn-auth-shared-light" disabled={loading}>
                                 {loading ? "Enviando..." : "Enviar enlace"}
                             </button>
                         </div>

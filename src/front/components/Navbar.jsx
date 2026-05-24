@@ -76,7 +76,7 @@ export const Navbar = () => {
 						{/* Dropdown Opciones de Usuario */}
 						{isAuthenticated && (
 							<div className="dropdown">
-								<button className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+								<button className="btn btn-auth-shared navbar-action-btn dropdown-toggle" data-bs-toggle="dropdown">
 									Mis Actividades
 								</button>
 								<ul className="dropdown-menu dropdown-menu-end">
@@ -89,8 +89,7 @@ export const Navbar = () => {
 
 						{!isAuthenticated ? (
 							<button
-								className="btn btn-outline-light"
-								style={{ fontWeight: 600, padding: "8px 20px", borderRadius: "8px" }}
+								className="btn btn-auth-shared navbar-action-btn"
 								onClick={() => navigate("/login")}
 							>
 								LOGIN
@@ -100,8 +99,8 @@ export const Navbar = () => {
 								<div
 									className="d-flex align-items-center justify-content-center"
 									style={{
-										width: "34px", height: "34px", borderRadius: "50%",
-										overflow: "hidden", border: "2px solid #C8F135",
+										width: "40px", height: "40px", borderRadius: "20%",
+										overflow: "hidden", border: "1px solid #ffffff",
 										background: "#14263b", color: "#fff", fontWeight: 700, fontSize: "12px"
 									}}
 									title={user?.username || user?.email}
@@ -112,7 +111,7 @@ export const Navbar = () => {
 										<span>{avatarFallback}</span>
 									)}
 								</div>
-								<button className="btn btn-sm btn-outline-danger" onClick={handleLogout}>
+								<button className="btn btn-auth-shared navbar-action-btn" onClick={handleLogout}>
 									Log Out
 								</button>
 							</div>
